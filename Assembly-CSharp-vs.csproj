@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Scripts\BulletScript.cs" />
      <Compile Include="Assets\_Scripts\CameraFollow.cs" />
      <Compile Include="Assets\_Scripts\MenuSelect.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
