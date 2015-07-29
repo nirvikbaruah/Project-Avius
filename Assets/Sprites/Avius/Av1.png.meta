@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: d4b184d6faec40f41802eb3db96ede14
+timeCreated: 1438070575
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Av1_0
+    21300002: Av1_1
+    21300004: Av1_2
+    21300006: Av1_3
+    21300008: Av1_4
+    21300010: Av1_5
+    21300012: Av1_6
+    21300014: Av1_7
+    21300016: Av1_8
+    21300018: Av1_9
+    21300020: Av1_10
+    21300022: Av1_11
+    21300024: Av1_12
+    21300026: Av1_13
+    21300028: Av1_14
+    21300030: Av1_15
+    21300032: Av1_16
+    21300034: Av1_17
+    21300036: Av1_18
+    21300038: Av1_19
+    21300040: Av1_20
+    21300042: Av1_21
+    21300044: Av1_22
+    21300046: Av1_23
+    21300048: Av1_24
+    21300050: Av1_25
+    21300052: Av1_26
+    21300054: Av1_27
+    21300056: Av1_28
+    21300058: Av1_29
+    21300060: Av1_30
+    21300062: Av1_31
+    21300064: Av1_32
+    21300066: Av1_33
+    21300068: Av1_34
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Av1_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 402
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 324
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 324
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 324
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 324
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 323
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 323
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 245
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 245
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 245
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 245
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 245
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_12
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 180
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 180
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 124
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 124
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_16
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 124
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_17
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 124
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_18
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 124
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 124
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_20
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 124
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 61
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 61
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 61
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_24
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 61
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_25
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 62
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_26
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 62
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_27
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_28
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_29
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 29
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_30
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 29
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_31
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 15
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_32
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 14
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_33
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 14
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av1_34
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 9
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
