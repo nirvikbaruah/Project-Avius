@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject bullet;
 	private float shootTimer = 5f;
 	private bool shoot = false;
+	public GameObject shootPoint;
 
 
 	// Use this for initialization
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 			shoot = true;
 			shootTimer = 5f;
 
-			Instantiate(bullet, transform.position, Quaternion.identity);
+			Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
 
 		}
 
