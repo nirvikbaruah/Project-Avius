@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		Movement ();
 
-		if (Input.GetButtonDown("Fire1")) {
+		if (Input.GetKeyDown("x")) {
 			anim.SetBool ("Shooting", true);
 			shoot = true;
 			shootTimer = 5f;
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 			transform.eulerAngles = new Vector2(0, 180);
 			isRight = false;
 		}
-		if(Input.GetButtonDown("Jump") && jumpCount == 0) { 
+		if(Input.GetKeyDown("z") && jumpCount == 0) { 
 			body.AddForce(Vector3.up * jumpHeight, ForceMode2D.Impulse);
 			jumpCount = 1; 
 		}
