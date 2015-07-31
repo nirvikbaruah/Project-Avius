@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Movement ();
+		TakeDamage ();
 
 		if (Input.GetKeyDown("x")) {
 			anim.SetBool ("Shooting", true);
@@ -55,23 +56,35 @@ public class PlayerController : MonoBehaviour {
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			transform.eulerAngles = new Vector2(0, 0);
 			isRight = true;
+			anim.SetBool ("isMoving", true);
 		}
 
 		if (Input.GetAxisRaw ("Horizontal") < 0) {
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			transform.eulerAngles = new Vector2(0, 180);
 			isRight = false;
+			anim.SetBool ("isMoving", true);
 		}
 		if(Input.GetKeyDown("z") && jumpCount == 0) { 
 			body.AddForce(Vector3.up * jumpHeight, ForceMode2D.Impulse);
 			jumpCount = 1; 
+			anim.SetBool ("Jumped", true);
+			anim.SetBool ("Landed", false);
 		}
 	}
 
+	void TakeDamage(){
+		if(Input.GetKeyDown("space")) { 
+			Debug.Log ("Testing death anim");
+			anim.SetBool ("Dead", true);
+		}
+	}
 
 	void OnCollisionEnter2D (Collision2D hit) { 
 		if(hit.gameObject.tag == "Floor") { 
 			jumpCount = 0; 
+			anim.SetBool ("Jumped", false);
+			anim.SetBool ("Landed", true);
 		} 
 	}
 
