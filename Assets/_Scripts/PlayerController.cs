@@ -17,11 +17,18 @@ public class PlayerController : MonoBehaviour {
 	private bool shoot = false;
 	public GameObject shootPoint;
 
+	private bool gunEquip; 
+	private bool isDead;
+	private bool jumped;
+
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
 		body = GetComponent<Rigidbody2D> ();
+		gunEquip = true;
+		isDead = anim.GetBool ("Dead");
+		jumped = anim.GetBool ("Jumped");
 
 	}
 	
@@ -30,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 		Movement ();
 		TakeDamage ();
 
-		if (Input.GetKeyDown("x")) {
+		if (Input.GetKeyDown("x") && gunEquip) {
 			anim.SetBool ("Shooting", true);
 			shoot = true;
 			shootTimer = 5f;
@@ -47,6 +54,12 @@ public class PlayerController : MonoBehaviour {
 			else{
 				shootTimer -= Time.deltaTime;
 			}
+		}
+
+		if (Input.GetKeyDown("c")) {
+			gunEquip = !gunEquip;
+			anim.SetBool ("gunOut", gunEquip);
+
 		}
 	}
 
