@@ -11,11 +11,16 @@ public class BulletScript : MonoBehaviour {
 		isRight = PlayerController.isRight;
 		body = GetComponent<Rigidbody2D> ();
 
-		if (isRight){
-			body.velocity = new Vector2(speed, 0);
-		} 
+		if(Input.GetKey(KeyCode.DownArrow)){
+			body.velocity = new Vector2(0, -1f * speed);
+		}
 		else{
-			body.velocity = new Vector2(speed * -1, 0f);
+			if (isRight){
+				body.velocity = new Vector2(speed, 0);
+			} 
+			else{
+				body.velocity = new Vector2(speed * -1, 0f);
+			}
 		}
 	}
 

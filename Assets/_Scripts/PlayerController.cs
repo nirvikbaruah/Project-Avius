@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D body;
 
 	public GameObject bullet;
-	private float shootTimer = 5f;
+	private float shootTimer = 2f;
 	private bool shoot = false;
 	public GameObject shootPoint;
 
@@ -48,10 +48,17 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown("x") && gunEquip) {
 			anim.SetBool ("Shooting", true);
 			shoot = true;
-			shootTimer = 5f;
+			shootTimer = 2f;
 
 			Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
 
+		}
+
+		if(Input.GetKey(KeyCode.DownArrow)){
+			anim.SetBool("ShootDown", true);
+		}
+		if (Input.GetKeyUp (KeyCode.DownArrow)) {
+			anim.SetBool("ShootDown", false);
 		}
 
 		if (shoot) {
