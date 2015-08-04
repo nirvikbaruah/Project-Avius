@@ -5,6 +5,12 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 6f;
 	public static bool isRight = true;
+	public float tapSpeed = 0.5f; //in seconds
+	private float lastTapTime = 0;
+	public float sprintSpeed = 12f;
+	private float stamina = 20f;
+	private bool sprinting = false;
+	public float staminaDecrease = 5f;
 
 	public float jumpHeight = 7.5f;
 	private int jumpCount = 0;
@@ -21,7 +27,6 @@ public class PlayerController : MonoBehaviour {
 	private bool isDead;
 	private bool jumped;
 
-
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -30,10 +35,13 @@ public class PlayerController : MonoBehaviour {
 		isDead = anim.GetBool ("Dead");
 		jumped = anim.GetBool ("Jumped");
 
+		lastTapTime = 0;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		DoubleTapSprint ();
 		Movement ();
 		TakeDamage ();
 
@@ -63,16 +71,26 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	void DoubleTapSprint(){
+		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown(KeyCode.D)) {
+			if ((Time.time - lastTapTime) < tapSpeed && stamina > 0f) {
+				speed = sprintSpeed;
+				sprinting = true;
+			}
+			lastTapTime = Time.time;
+		}
+	}
+
 	void Movement(){
 
-		if (Input.GetAxisRaw ("Horizontal") > 0) {
+		if (Input.GetAxisRaw("Horizontal") > 0) {
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			transform.eulerAngles = new Vector2(0, 0);
 			isRight = true;
 			anim.SetBool ("isMoving", true);
 		}
 
-		if (Input.GetAxisRaw ("Horizontal") < 0) {
+		if (Input.GetAxisRaw("Horizontal") < 0) {
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			transform.eulerAngles = new Vector2(0, 180);
 			isRight = false;
@@ -84,6 +102,22 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool ("Jumped", true);
 			anim.SetBool ("Landed", false);
 		}
+
+		if (sprinting && speed == sprintSpeed) {
+			stamina -= staminaDecrease * Time.fixedDeltaTime;
+			Debug.Log ("Stamina left:" + stamina);
+			anim.SetBool("isSprinting", true);
+		}
+		else{
+			sprinting = false;
+			stamina += (staminaDecrease / 2) * Time.deltaTime;
+			anim.SetBool("isSprinting", false);
+		}
+
+		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.D) || stamina <= 0f) {
+			speed = 6f;
+		}
+		
 	}
 
 	void TakeDamage(){
