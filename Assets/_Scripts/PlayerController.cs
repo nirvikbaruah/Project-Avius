@@ -58,10 +58,20 @@ public class PlayerController : MonoBehaviour {
 		}
 		
 		if(Input.GetKey(KeyCode.DownArrow)){
-			anim.SetBool("ShootDown", true);
+			if (speed == 12f){
+				anim.SetBool("Slide", true);
+			}
+			else{
+				anim.SetBool("ShootDown", true);
+			}
 		}
 		if (Input.GetKeyUp (KeyCode.DownArrow)) {
-			anim.SetBool("ShootDown", false);
+			if (anim.GetBool("Slide") == true){
+				anim.SetBool("Slide", false);
+			}
+			else{
+				anim.SetBool("ShootDown", false);
+			}
 		}
 		
 		if (shoot) {
