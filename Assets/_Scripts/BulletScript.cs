@@ -6,12 +6,16 @@ public class BulletScript : MonoBehaviour {
 	private bool isRight;
 	private Rigidbody2D body;
 	public float speed = 6f;
+	private bool isLand;
+
 
 	void Start(){
 		isRight = PlayerController.isRight;
 		body = GetComponent<Rigidbody2D> ();
+		isLand = PlayerController.onLand;
 
-		if(Input.GetKey(KeyCode.DownArrow)){
+
+		if(Input.GetKey(KeyCode.DownArrow) && !isLand){
 			body.velocity = new Vector2(0, -1f * speed);
 		}
 		else{

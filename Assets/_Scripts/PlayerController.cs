@@ -26,9 +26,11 @@ public class PlayerController : MonoBehaviour {
 	private bool gunEquip; 
 	private bool isDead;
 	private bool jumped;
-	private bool landed = false;
+	public static bool onLand = false;
 
 	public float playerHealth = 100f;
+	public float waterHealthDecrease = 10f;
+	private bool enterWater = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -87,7 +89,13 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown("c")) {
 			gunEquip = !gunEquip;
 			anim.SetBool ("gunOut", gunEquip);
-			
+		}
+
+
+		if (enterWater) {
+			speed = 3f;
+			playerHealth -= waterHealthDecrease * Time.deltaTime;
+			Debug.Log (playerHealth);
 		}
 	}
 	
@@ -116,11 +124,10 @@ public class PlayerController : MonoBehaviour {
 			isRight = false;
 			anim.SetBool ("isMoving", true);
 		}
-		if(Input.GetKeyDown("z") && jumpCount == 0) { 
+		if(Input.GetKeyDown("z") && jumpCount == 0 && onLand) { 
 			body.AddForce(Vector3.up * jumpHeight, ForceMode2D.Impulse);
 			jumpCount = 1; 
-			landed = false;
-			Debug.Log (landed);
+			onLand = false;
 			anim.SetBool ("Jumped", true);
 			anim.SetBool ("Landed", false);
 		}
@@ -147,11 +154,26 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+	void OnTriggerEnter2D(Collider2D hit) {
+		if(hit.gameObject.tag == "Water") { 
+			enterWater = true;
+			jumpHeight *= 0.75f;
+		} 
+	}
+
+	void OnTriggerExit2D(Collider2D hit){
+		if(hit.gameObject.tag == "Water") { 
+			enterWater = false;
+			speed = 6f;
+			jumpHeight *= 1.25f;
+		} 
+	}
 	
 	void OnCollisionEnter2D (Collision2D hit) { 
 		if(hit.gameObject.tag == "Floor") { 
 			jumpCount = 0; 
-			landed = true;
+			onLand = true;
 			anim.SetBool ("Jumped", false);
 			anim.SetBool ("Landed", true);
 		} 
