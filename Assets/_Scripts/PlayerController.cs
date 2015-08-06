@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 	private Rigidbody2D body;
 	
 	public GameObject bullet;
+	public GameObject chargeBullet;
 	private float shootTimer = 2f;
 	private bool shoot = false;
 	public GameObject shootPoint;
@@ -29,8 +30,14 @@ public class PlayerController : MonoBehaviour {
 	public static bool onLand = false;
 
 	public float playerHealth = 100f;
-	public float waterHealthDecrease = 10f;
+	public float waterHealthDecrease = 20f;
 	private bool enterWater = false;
+
+	public bool walking = false;
+
+	private float chargeTimer = 1f;
+	private bool charged = false;
+	private bool charging = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -50,13 +57,28 @@ public class PlayerController : MonoBehaviour {
 		Movement ();
 		TakeDamage ();
 		
-		if (Input.GetKeyDown("x") && gunEquip) {
+		if (Input.GetKeyDown("x") && gunEquip && !charging) {
 			anim.SetBool ("Shooting", true);
 			shoot = true;
 			shootTimer = 2f;
+			if (charged){
+				Instantiate(chargeBullet, shootPoint.transform.position, Quaternion.identity);
+				charged = false;
+				anim.SetBool ("Charged", false);
+			}
+			else{
+				Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
+			}
 			
-			Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
-			
+		}
+
+		if (Input.GetKey(KeyCode.E)){
+			anim.SetBool("ShieldUp", true);
+			speed = 1f;
+		}
+		if (Input.GetKeyUp(KeyCode.E)){
+			anim.SetBool("ShieldUp", false);
+			speed = 6f;
 		}
 		
 		if(Input.GetKey(KeyCode.DownArrow)){
@@ -91,11 +113,22 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool ("gunOut", gunEquip);
 		}
 
+		if (Input.GetKey(KeyCode.X)){
+			charging = true;
+			chargeTimer -= Time.deltaTime;
+			if (chargeTimer < 0f){
+				chargeTimer = 3f;
+				charged = true;
+				anim.SetBool("Charged", true);
+			}
+		}
+		if (Input.GetKeyUp(KeyCode.X)){
+			charging = false;
+		}
 
 		if (enterWater) {
 			speed = 3f;
 			playerHealth -= waterHealthDecrease * Time.deltaTime;
-			Debug.Log (playerHealth);
 		}
 	}
 	
@@ -104,25 +137,36 @@ public class PlayerController : MonoBehaviour {
 			if ((Time.time - lastTapTime) < tapSpeed && stamina > 0f) {
 				speed = sprintSpeed;
 				sprinting = true;
+				anim.SetBool ("PlayRunAnim", true);
+				anim.SetBool ("Dash", true);
 			}
 			lastTapTime = Time.time;
 		}
 	}
 	
 	void Movement(){
+
+		if (Input.GetAxisRaw ("Horizontal") == 0) {
+			anim.SetBool ("PlayRunAnim", false);
+			walking = false;
+		}
 		
 		if (Input.GetAxisRaw("Horizontal") > 0) {
+			anim.SetBool ("PlayRunAnim", true);
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			transform.eulerAngles = new Vector2(0, 0);
 			isRight = true;
 			anim.SetBool ("isMoving", true);
+			walking = true;
 		}
 		
 		if (Input.GetAxisRaw("Horizontal") < 0) {
+			anim.SetBool ("PlayRunAnim", true);
 			transform.Translate(Vector3.right * speed * Time.deltaTime);
 			transform.eulerAngles = new Vector2(0, 180);
 			isRight = false;
 			anim.SetBool ("isMoving", true);
+			walking = true;
 		}
 		if(Input.GetKeyDown("z") && jumpCount == 0 && onLand) { 
 			body.AddForce(Vector3.up * jumpHeight, ForceMode2D.Impulse);
@@ -140,12 +184,13 @@ public class PlayerController : MonoBehaviour {
 			sprinting = false;
 			stamina += (staminaDecrease / 2) * Time.deltaTime;
 			anim.SetBool("isSprinting", false);
+			anim.SetBool ("Dash", false);
 		}
 		
 		if (Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.RightArrow) || Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.D) || stamina <= 0f) {
 			speed = 6f;
 		}
-		
+
 	}
 	
 	void TakeDamage(){
@@ -158,7 +203,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D hit) {
 		if(hit.gameObject.tag == "Water") { 
 			enterWater = true;
-			jumpHeight *= 0.75f;
+			jumpHeight = 7f;
 		} 
 	}
 
@@ -166,7 +211,7 @@ public class PlayerController : MonoBehaviour {
 		if(hit.gameObject.tag == "Water") { 
 			enterWater = false;
 			speed = 6f;
-			jumpHeight *= 1.25f;
+			jumpHeight = 9.5f;
 		} 
 	}
 	
