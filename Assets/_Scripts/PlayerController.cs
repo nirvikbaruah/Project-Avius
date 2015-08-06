@@ -56,6 +56,9 @@ public class PlayerController : MonoBehaviour {
 		DoubleTapSprint ();
 		Movement ();
 		TakeDamage ();
+		if (body.velocity.y < 0f) {
+			anim.SetBool ("Falling", true);
+		} 
 		
 		if (Input.GetKeyDown("x") && gunEquip && !charging) {
 			anim.SetBool ("Shooting", true);
@@ -221,6 +224,7 @@ public class PlayerController : MonoBehaviour {
 			onLand = true;
 			anim.SetBool ("Jumped", false);
 			anim.SetBool ("Landed", true);
+			anim.SetBool ("Falling", false);
 		} 
 	}
 

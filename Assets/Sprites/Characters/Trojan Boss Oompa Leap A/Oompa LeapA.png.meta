@@ -1,9 +1,38 @@
 fileFormatVersion: 2
 guid: 5085f0c4971020e4b97c5688f7efa60a
-timeCreated: 1438694717
+timeCreated: 1438871973
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Oompa LeapA_0
+    21300002: Oompa LeapA_1
+    21300004: Oompa LeapA_2
+    21300006: Oompa LeapA_3
+    21300008: Oompa LeapA_4
+    21300010: Oompa LeapA_5
+    21300012: Oompa LeapA_6
+    21300014: Oompa LeapA_7
+    21300016: Oompa LeapA_8
+    21300018: Oompa LeapA_9
+    21300020: Oompa LeapA_10
+    21300022: Oompa LeapA_11
+    21300024: Oompa LeapA_12
+    21300026: Oompa LeapA_13
+    21300028: Oompa LeapA_14
+    21300030: Oompa LeapA_15
+    21300032: Oompa LeapA_16
+    21300034: Oompa LeapA_17
+    21300036: Oompa LeapA_18
+    21300038: Oompa LeapA_19
+    21300040: Oompa LeapA_20
+    21300042: Oompa LeapA_21
+    21300044: Oompa LeapA_22
+    21300046: Oompa LeapA_23
+    21300048: Oompa LeapA_24
+    21300050: Oompa LeapA_25
+    21300052: Oompa LeapA_26
+    21300054: Oompa LeapA_27
+    21300056: Oompa LeapA_28
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +59,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +77,297 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Oompa LeapA_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1156
+        width: 124
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1150
+        width: 149
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1000
+        width: 106
+        height: 97
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1000
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_4
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1000
+        width: 113
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1002
+        width: 108
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_6
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1002
+        width: 117
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1001
+        width: 128
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_8
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 845
+        width: 99
+        height: 136
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 849
+        width: 61
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_10
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 851
+        width: 71
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_11
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 856
+        width: 71
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_12
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 856
+        width: 67
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_13
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 858
+        width: 71
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_14
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 859
+        width: 68
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_15
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 859
+        width: 56
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_16
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 858
+        width: 59
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_17
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 857
+        width: 63
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_18
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 701
+        width: 143
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_19
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 716
+        width: 153
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 399
+        width: 212
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_21
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 400
+        width: 216
+        height: 130
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_22
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 399
+        width: 159
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_23
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 238
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_24
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 241
+        width: 85
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_25
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 243
+        width: 86
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_26
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 242
+        width: 151
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_27
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 94
+        width: 161
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Oompa LeapA_28
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 128
+        width: 152
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
