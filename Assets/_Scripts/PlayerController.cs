@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour {
 	private float chargeTimer = 1f;
 	private bool charged = false;
 	private bool charging = false;
+
+	public GameObject healthBar;
 	
 	// Use this for initialization
 	void Start () {
@@ -56,9 +58,6 @@ public class PlayerController : MonoBehaviour {
 		DoubleTapSprint ();
 		Movement ();
 		TakeDamage ();
-		if (body.velocity.y < 0f) {
-			anim.SetBool ("Falling", true);
-		} 
 		
 		if (Input.GetKeyDown("x") && gunEquip && !charging) {
 			anim.SetBool ("Shooting", true);
@@ -197,9 +196,10 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void TakeDamage(){
-		if(Input.GetKeyDown("space")) { 
+		if(playerHealth <= 0f) { 
 			anim.SetBool ("Dead", true);
 		}
+		healthBar.transform.localScale = new Vector3 (playerHealth / 100f, 1, 0);
 
 	}
 
@@ -224,8 +224,10 @@ public class PlayerController : MonoBehaviour {
 			onLand = true;
 			anim.SetBool ("Jumped", false);
 			anim.SetBool ("Landed", true);
-			anim.SetBool ("Falling", false);
 		} 
+		if (hit.gameObject.tag == "WallJump") {
+
+		}
 	}
 
 
