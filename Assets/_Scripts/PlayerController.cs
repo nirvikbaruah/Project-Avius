@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour {
 	private bool charging = false;
 	
 	public GameObject healthBar;
+	private bool doubleJump = false;
+	private float doubleClock = 0.5f;
 	
 	// Use this for initialization
 	void Start () {
@@ -60,6 +62,17 @@ public class PlayerController : MonoBehaviour {
 		Movement ();
 		TakeDamage ();
 
+		if (doubleJump) {
+			doubleClock -= Time.deltaTime;
+			if (doubleClock < 0f){
+				doubleJump = false;
+				doubleClock = 0.5f;
+			}
+			if(Input.GetKeyDown (KeyCode.Z)){
+				doubleClock = -1;
+				jumpCount += 1;
+			}
+		}
 
 		if (Input.GetKeyDown("x") && gunEquip && !charging) {
 			anim.SetBool ("Shooting", true);
@@ -229,6 +242,7 @@ public class PlayerController : MonoBehaviour {
 			onLand = true;
 			anim.SetBool ("Jumped", false);
 			anim.SetBool ("Landed", true);
+			doubleJump = true;
 		} 
 		if (hit.gameObject.tag == "Enemy") {
 			playerHealth -= 20f;
