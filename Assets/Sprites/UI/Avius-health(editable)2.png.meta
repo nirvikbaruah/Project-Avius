@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: dfa87afb8fd1ac044b060791cfc22c54
-timeCreated: 1438320650
+timeCreated: 1438936882
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,8 +61,8 @@ TextureImporter:
         y: 230
         width: 285
         height: 7
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Avius-health(editable)2_1
       rect:

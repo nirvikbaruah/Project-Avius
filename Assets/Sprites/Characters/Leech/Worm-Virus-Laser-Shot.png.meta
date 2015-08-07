@@ -1,9 +1,16 @@
 fileFormatVersion: 2
 guid: 908986d4b115a4a55a72463cda831df5
-timeCreated: 1438868593
+timeCreated: 1438937790
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Worm-Virus-Laser-Shot_0
+    21300002: Worm-Virus-Laser-Shot_1
+    21300004: Worm-Virus-Laser-Shot_2
+    21300006: Worm-Virus-Laser-Shot_3
+    21300008: Worm-Virus-Laser-Shot_4
+    21300010: Worm-Virus-Laser-Shot_5
+    21300012: Worm-Virus-Laser-Shot_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +37,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +55,77 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Worm-Virus-Laser-Shot_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 549
+        width: 144
+        height: 92
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Laser-Shot_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 548
+        width: 166
+        height: 99
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Laser-Shot_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 549
+        width: 252
+        height: 101
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Laser-Shot_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 427
+        width: 321
+        height: 111
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Laser-Shot_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 427
+        width: 320
+        height: 111
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Laser-Shot_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 317
+        width: 263
+        height: 115
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Laser-Shot_6
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 319
+        width: 154
+        height: 98
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

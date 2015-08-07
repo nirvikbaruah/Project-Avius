@@ -28,17 +28,17 @@ public class PlayerController : MonoBehaviour {
 	private bool isDead;
 	private bool jumped;
 	public static bool onLand = false;
-
+	
 	public float playerHealth = 100f;
 	public float waterHealthDecrease = 20f;
 	private bool enterWater = false;
-
+	
 	public bool walking = false;
-
+	
 	private float chargeTimer = 1f;
 	private bool charged = false;
 	private bool charging = false;
-
+	
 	public GameObject healthBar;
 	
 	// Use this for initialization
@@ -58,7 +58,8 @@ public class PlayerController : MonoBehaviour {
 		DoubleTapSprint ();
 		Movement ();
 		TakeDamage ();
-		
+
+
 		if (Input.GetKeyDown("x") && gunEquip && !charging) {
 			anim.SetBool ("Shooting", true);
 			shoot = true;
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour {
 			}
 			
 		}
-
+		
 		if (Input.GetKey(KeyCode.E)){
 			anim.SetBool("ShieldUp", true);
 			speed = 1f;
@@ -114,20 +115,25 @@ public class PlayerController : MonoBehaviour {
 			gunEquip = !gunEquip;
 			anim.SetBool ("gunOut", gunEquip);
 		}
-
+		
 		if (Input.GetKey(KeyCode.X)){
-			charging = true;
 			chargeTimer -= Time.deltaTime;
 			if (chargeTimer < 0f){
-				chargeTimer = 3f;
+				chargeTimer = 1f;
 				charged = true;
 				anim.SetBool("Charged", true);
+				speed = 3f;
 			}
 		}
 		if (Input.GetKeyUp(KeyCode.X)){
-			charging = false;
+			speed = 6f;
+			chargeTimer = 1f;
+			if (anim.GetBool("Charged")){
+				Instantiate(chargeBullet, shootPoint.transform.position, Quaternion.identity);
+			}
+			anim.SetBool("Charged", false);
 		}
-
+		
 		if (enterWater) {
 			speed = 3f;
 			playerHealth -= waterHealthDecrease * Time.deltaTime;
@@ -147,7 +153,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void Movement(){
-
+		
 		if (Input.GetAxisRaw ("Horizontal") == 0) {
 			anim.SetBool ("PlayRunAnim", false);
 			walking = false;
@@ -192,7 +198,7 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.RightArrow) || Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.D) || stamina <= 0f) {
 			speed = 6f;
 		}
-
+		
 	}
 	
 	void TakeDamage(){
@@ -202,14 +208,14 @@ public class PlayerController : MonoBehaviour {
 		healthBar.transform.localScale = new Vector3 (playerHealth / 100f, 1, 0);
 
 	}
-
+	
 	void OnTriggerEnter2D(Collider2D hit) {
 		if(hit.gameObject.tag == "Water") { 
 			enterWater = true;
 			jumpHeight = 7f;
 		} 
 	}
-
+	
 	void OnTriggerExit2D(Collider2D hit){
 		if(hit.gameObject.tag == "Water") { 
 			enterWater = false;
@@ -226,9 +232,9 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool ("Landed", true);
 		} 
 		if (hit.gameObject.tag == "WallJump") {
-
+			
 		}
 	}
-
-
+	
+	
 }

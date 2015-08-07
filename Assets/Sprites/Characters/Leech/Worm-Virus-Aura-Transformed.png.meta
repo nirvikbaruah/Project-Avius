@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: 52299be40b51c4f6ea908ed1b54911ce
-timeCreated: 1438868593
+timeCreated: 1438940490
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Worm-Virus-Aura-Transformed_0
+    21300002: Worm-Virus-Aura-Transformed_1
+    21300004: Worm-Virus-Aura-Transformed_2
+    21300006: Worm-Virus-Aura-Transformed_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +34,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +52,47 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Worm-Virus-Aura-Transformed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339
+        width: 149
+        height: 96
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Aura-Transformed_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 340
+        width: 149
+        height: 96
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Aura-Transformed_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 447
+        width: 166
+        height: 159
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Aura-Transformed_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 452
+        width: 157
+        height: 154
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

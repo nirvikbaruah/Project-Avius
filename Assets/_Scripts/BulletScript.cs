@@ -28,6 +28,12 @@ public class BulletScript : MonoBehaviour {
 		}
 	}
 
+	void Update(){
+		if (Mathf.Abs (body.velocity.x) != speed) {
+			Destroy(gameObject);
+		}
+	}
+
 	void OnBecameInvisible() {
 		Destroy(gameObject);
 	}
