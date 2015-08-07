@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 	private bool jumped;
 	public static bool onLand = false;
 	
-	public float playerHealth = 100f;
+	public static float playerHealth = 100f;
 	public float waterHealthDecrease = 20f;
 	private bool enterWater = false;
 	
@@ -214,11 +214,8 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void TakeDamage(){
-		if(playerHealth <= 0f) { 
-			anim.SetBool ("Dead", true);
-		}
-		healthBar.transform.localScale = new Vector3 (playerHealth / 100f, 1, 0);
 
+		healthBar.transform.localScale = new Vector3 (playerHealth / 100f, 1, 0);
 	}
 	
 	void OnTriggerEnter2D(Collider2D hit) {
@@ -244,7 +241,7 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool ("Landed", true);
 			doubleJump = true;
 		} 
-		if (hit.gameObject.tag == "Enemy") {
+		if (hit.gameObject.tag == "Enemy" && !anim.GetBool("ShieldUp")) {
 			playerHealth -= 20f;
 		}
 		if (hit.gameObject.tag == "WallJump") {

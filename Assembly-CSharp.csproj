@@ -46,14 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChargeEnemy.cs" />
-     <Compile Include="Assets\LeechMini.cs" />
-     <Compile Include="Assets\TrojanBoss.cs" />
+     <Compile Include="Assets\Checkpoints.cs" />
      <Compile Include="Assets\_Scripts\BulletScript.cs" />
      <Compile Include="Assets\_Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\_Scripts\ChargeEnemy.cs" />
      <Compile Include="Assets\_Scripts\EnemyController.cs" />
+     <Compile Include="Assets\_Scripts\LeechMini.cs" />
      <Compile Include="Assets\_Scripts\MenuSelect.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
+     <Compile Include="Assets\_Scripts\TrojanBoss.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

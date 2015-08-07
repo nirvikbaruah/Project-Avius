@@ -18,7 +18,14 @@ public class TrojanBoss : MonoBehaviour {
 	}
 
 	void Update(){
-
+		distance = player.transform.position - transform.position;
+		
+		if (distance.x > 0f) {
+			transform.eulerAngles = new Vector2 (0, 180);
+			
+		} else {
+			transform.eulerAngles = new Vector2 (0, 0);
+		}
 	}
 	
 	// Update is called once per frame
