@@ -9,7 +9,8 @@ public class TrojanBoss : MonoBehaviour {
 	public Animator anim;
 	public PlayerController health;
 	private float clock = 3f;
-	private Vector3 target;
+	public GameObject target1;
+	public Transform target2;
 	public float healthLevel;
 
 	// Use this for initialization
@@ -26,7 +27,18 @@ public class TrojanBoss : MonoBehaviour {
 		} else {
 			transform.eulerAngles = new Vector2 (0, 0);
 		}
+
+		clock -= Time.deltaTime;
+		if (clock <= 0f) {
+			if (Random.value < 0.2f){
+				anim.SetBool("Charge", true);
+				transform.position = Vector3.MoveTowards(transform.position, target1.transform.position, 30f * Time.deltaTime);
+			}
+			clock = 3f;
+		}
+
 	}
+
 	
 	// Update is called once per frame
 	/*void Update () {

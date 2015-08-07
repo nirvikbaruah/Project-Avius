@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 	private bool jumped;
 	public static bool onLand = false;
 	
-	public static float playerHealth = 100f;
+	public float playerHealth = 100f;
 	public float waterHealthDecrease = 20f;
 	private bool enterWater = false;
 	
@@ -214,7 +214,6 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void TakeDamage(){
-
 		healthBar.transform.localScale = new Vector3 (playerHealth / 100f, 1, 0);
 	}
 	

@@ -5,7 +5,7 @@ public class BulletScript : MonoBehaviour {
 
 	private bool isRight;
 	private Rigidbody2D body;
-	public float speed = 6f;
+	public float speed = 15f;
 	private bool isLand;
 
 
