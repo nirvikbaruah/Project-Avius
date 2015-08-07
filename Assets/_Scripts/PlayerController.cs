@@ -230,6 +230,9 @@ public class PlayerController : MonoBehaviour {
 			anim.SetBool ("Jumped", false);
 			anim.SetBool ("Landed", true);
 		} 
+		if (hit.gameObject.tag == "Enemy") {
+			playerHealth -= 20f;
+		}
 		if (hit.gameObject.tag == "WallJump") {
 			
 		}

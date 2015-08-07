@@ -1,9 +1,15 @@
 fileFormatVersion: 2
 guid: 113a609f556b040bd846795930cc25ed
-timeCreated: 1438948571
+timeCreated: 1438951695
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Trojan 1 Sheet (2)_0
+    21300002: Trojan 1 Sheet (2)_1
+    21300004: Trojan 1 Sheet (2)_2
+    21300006: Trojan 1 Sheet (2)_3
+    21300008: Trojan 1 Sheet (2)_4
+    21300010: Trojan 1 Sheet (2)_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +36,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +54,67 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Trojan 1 Sheet (2)_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 199
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trojan 1 Sheet (2)_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 199
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trojan 1 Sheet (2)_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 199
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trojan 1 Sheet (2)_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 130
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trojan 1 Sheet (2)_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 128
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Trojan 1 Sheet (2)_5
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 127
+        width: 49
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

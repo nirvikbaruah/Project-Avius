@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ChargeEnemy.cs" />
      <Compile Include="Assets\LeechMini.cs" />
      <Compile Include="Assets\TrojanBoss.cs" />
      <Compile Include="Assets\_Scripts\BulletScript.cs" />

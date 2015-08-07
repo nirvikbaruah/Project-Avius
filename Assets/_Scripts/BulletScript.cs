@@ -29,7 +29,7 @@ public class BulletScript : MonoBehaviour {
 	}
 
 	void Update(){
-		if (Mathf.Abs (body.velocity.x) != speed) {
+		if (Mathf.Abs (body.velocity.x) != speed && Mathf.Abs (body.velocity.y) != speed) {
 			Destroy(gameObject);
 		}
 	}

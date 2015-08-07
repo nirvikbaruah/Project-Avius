@@ -2,10 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/_Scripts/PlayerController.cs" Line="11" Column="25" />
-      <File FileName="Assets/LeechMini.cs" Line="6" Column="27" />
-      <File FileName="Assets/_Scripts/EnemyController.cs" Line="19" Column="15" />
-      <File FileName="Assets/_Scripts/BulletScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/PlayerController.cs" Line="228" Column="19" />
+      <File FileName="Assets/LeechMini.cs" Line="1" Column="1" />
+      <File FileName="Assets/_Scripts/EnemyController.cs" Line="29" Column="84" />
+      <File FileName="Assets/_Scripts/BulletScript.cs" Line="25" Column="9" />
+      <File FileName="Assets/TrojanBoss.cs" Line="17" Column="2" />
+      <File FileName="Assets/ChargeEnemy.cs" Line="28" Column="95" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
