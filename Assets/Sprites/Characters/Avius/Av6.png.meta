@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: fa4b1176179cc4c9f8c0ae7fa109cc60
-timeCreated: 1438862214
+timeCreated: 1438945631
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -52,6 +52,12 @@ TextureImporter:
     21300090: Av6_45
     21300092: Av6_46
     21300094: Av6_47
+    21300096: Av6_48
+    21300098: Av6_49
+    21300100: Av6_50
+    21300102: Av6_51
+    21300104: Av6_52
+    21300106: Av6_53
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -574,6 +580,66 @@ TextureImporter:
         y: 92
         width: 33
         height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av6_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1138
+        width: 65
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av6_49
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1142
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av6_50
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1140
+        width: 65
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av6_51
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1142
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av6_52
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1141
+        width: 64
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Av6_53
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1063
+        width: 69
+        height: 74
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5085f0c4971020e4b97c5688f7efa60a
-timeCreated: 1438871973
+timeCreated: 1438943340
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -165,8 +165,8 @@ TextureImporter:
         y: 845
         width: 99
         height: 136
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_9
       rect:
@@ -175,8 +175,8 @@ TextureImporter:
         y: 849
         width: 61
         height: 145
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_10
       rect:
@@ -185,8 +185,8 @@ TextureImporter:
         y: 851
         width: 71
         height: 146
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_11
       rect:
@@ -195,8 +195,8 @@ TextureImporter:
         y: 856
         width: 71
         height: 143
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_12
       rect:
@@ -205,8 +205,8 @@ TextureImporter:
         y: 856
         width: 67
         height: 143
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_13
       rect:
@@ -215,8 +215,8 @@ TextureImporter:
         y: 858
         width: 71
         height: 141
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_14
       rect:
@@ -225,8 +225,8 @@ TextureImporter:
         y: 859
         width: 68
         height: 141
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_15
       rect:
@@ -235,8 +235,8 @@ TextureImporter:
         y: 859
         width: 56
         height: 140
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_16
       rect:
@@ -245,8 +245,8 @@ TextureImporter:
         y: 858
         width: 59
         height: 142
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_17
       rect:
@@ -255,8 +255,8 @@ TextureImporter:
         y: 857
         width: 63
         height: 147
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Oompa LeapA_18
       rect:

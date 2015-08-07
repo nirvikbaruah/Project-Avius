@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: fde456eaed79a4878beed5267c392c71
+timeCreated: 1438940772
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Worm-Virus-Leech-Sheet_0
+    21300002: Worm-Virus-Leech-Sheet_1
+    21300004: Worm-Virus-Leech-Sheet_2
+    21300006: Worm-Virus-Leech-Sheet_3
+    21300008: Worm-Virus-Leech-Sheet_4
+    21300010: Worm-Virus-Leech-Sheet_5
+    21300012: Worm-Virus-Leech-Sheet_6
+    21300014: Worm-Virus-Leech-Sheet_7
+    21300016: Worm-Virus-Leech-Sheet_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Worm-Virus-Leech-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 382
+        width: 58
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 596
+        width: 144
+        height: 89
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 594
+        width: 148
+        height: 93
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 596
+        width: 147
+        height: 91
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 596
+        width: 157
+        height: 92
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 489
+        width: 163
+        height: 93
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 490
+        width: 170
+        height: 91
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 491
+        width: 163
+        height: 91
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Worm-Virus-Leech-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 492
+        width: 177
+        height: 91
+      alignment: 5
+      pivot: {x: 1, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,6 +8,9 @@ public class EnemyController : MonoBehaviour {
 	public Animator anim;
 	private float clock = 1f;
 
+	public GameObject healthBar;
+	public bool trojan;
+
 	// Use this for initialization
 	void Start () {
 		anim.GetComponent<Animator> ();
@@ -20,6 +23,10 @@ public class EnemyController : MonoBehaviour {
 			}else{
 				anim.SetBool("Heal", false);
 			}
+		}
+
+		if (trojan) {
+			healthBar.transform.localScale = new Vector3 ((health / 1000f) / 10f, 0.2441701f, 0);
 		}
 	}
 

@@ -12,18 +12,22 @@ public class MenuSelect : MonoBehaviour {
 	}
 
 	public void LoadSaveLevel(){
-		//Load saved game file
+		Application.LoadLevel ("Credits");
 
 	}
 
 	public void LoadOption(){
-		//Load options menu
+
 
 	}
 
 	public void QuitGame(){
 		//Quit the game
 		Application.Quit ();
+	}
+
+	public void Back(){
+		Application.LoadLevel ("MainMenu");
 	}
 
 	public void ButtonHover(Text buttonText){

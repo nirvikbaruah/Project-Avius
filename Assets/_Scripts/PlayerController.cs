@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour {
 		gunEquip = true;
 		isDead = anim.GetBool ("Dead");
 		jumped = anim.GetBool ("Jumped");
-		
+
+		anim.SetBool ("Dead", false);
 		lastTapTime = 0;
 		
 	}
@@ -77,11 +78,9 @@ public class PlayerController : MonoBehaviour {
 		
 		if (Input.GetKey(KeyCode.E)){
 			anim.SetBool("ShieldUp", true);
-			speed = 1f;
 		}
 		if (Input.GetKeyUp(KeyCode.E)){
 			anim.SetBool("ShieldUp", false);
-			speed = 6f;
 		}
 		
 		if(Input.GetKey(KeyCode.DownArrow)){
