@@ -49,7 +49,16 @@ public class PlayerMovement : MonoBehaviour {
             if (Horizontal != 0)
             {
                 transform.localScale = new Vector3((RB.velocity.x >= 0 ? StartingScale.x : -StartingScale.x), StartingScale.y);
+                anim.SetBool("PlayRunAnim", true);
             }
+            else
+            {
+                anim.SetBool("PlayRunAnim", false);
+            }
+
+            anim.SetBool("isMoving", RB.velocity.x != 0);
+            anim.SetBool("Jumped", !grounded);
+            anim.SetBool("Landed", grounded);
         }
     }
 
