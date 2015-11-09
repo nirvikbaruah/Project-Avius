@@ -13,7 +13,7 @@ public class Checkpoints : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		health = player.GetComponent<PlayerController> ().playerHealth;
+		health = player.GetComponent<Health> ().GetHealth();
 	}
 
 	// Update is called once per frame
